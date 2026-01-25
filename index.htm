@@ -34,7 +34,6 @@ body {
 code {
 	font-family: "Roboto Mono", "Courier New", "Courier", monospace;
 }
-
 nav, nav a {
 	background-color: rgb(140,170,230) !important;
 	color: black !important;
@@ -54,11 +53,9 @@ nav img {
 	padding: 20px;
 	text-align: center;
 }
-
 .hero .fl {
 	float: left;
 }
-
 .hero .fr {
 	float: right;
 }
@@ -68,11 +65,9 @@ article {
 	max-width: 75dvw;
 	text-indent: 2em;
 }
-
 article img {
 	float: right;
 }
-
 article h2 {
 	border-bottom: solid;
 	max-width: 35dvw;
@@ -81,13 +76,26 @@ article h2 {
 a {
 	text-decoration: none;
 }
-
 a:link, a:visited {
 	color: blue;
 }
-
 a:hover, a:active {
 	color: red;
+}
+
+/* Mobile Users */
+@media (max-width: 600px) {
+	article {
+		margin: auto;
+		max-width: 100dvw;
+		text-indent: 0em;
+	}
+	article img {
+		display: none;
+	}
+	.hero {
+		max-width: 90dvw;
+	}
 }
 
 </style>
