@@ -6,10 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- make previews nice -->
+		<meta name="twitter:card" content="summary">
 		<meta property="og:title" content="King Gizzard and the Installation Wizard">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://kinggizzardandtheinstallationwizard.github.io">
-		<meta property="og:image" content="shake.gif">
+		<meta property="og:image" content="https://kinggizzardandtheinstallationwizard.github.io/gopher.png">
+		<meta property="og:site_name" content="KGATiW">
 
 		<!-- actually part of the website -->
 		<title>king gizzard and the installation wizard</title>
@@ -53,11 +55,17 @@ nav img {
 	padding: 20px;
 	text-align: center;
 }
+.hero img {
+	transform: scale(3);
+	image-rendering: pixelated;
+}
 .hero .fl {
 	float: left;
+	transform-origin: top left;
 }
 .hero .fr {
 	float: right;
+	transform-origin: top right;
 }
 
 article {
@@ -102,9 +110,8 @@ a:hover, a:active {
 	</head>
 	<body>
 		<nav class="nav" tabindex="-1" onclick="this.focus()">
-			<img src="shake.gif"
-			     alt="0% mothra compatible"
-			     width="32">
+			<img src="shake.webp"
+			     alt="0% mothra compatible">
 			<div class="container">
 				<a class="pagename current" href="#">KGATiW</a>
 				<a href="https://github.com/kinggizzardandtheinstallationwizard"
@@ -113,14 +120,14 @@ a:hover, a:active {
 		</nav>
 		<div class="container">
 			<div class="hero">
-				<img src="shake.gif" alt="!!" class="fl">
-				<img src="shake.gif" alt="!!" class="fr">
+				<img src="shake.webp" alt="!!" class="fl" style="">
+				<img src="shake.webp" alt="!!" class="fr">
 				<h1>HI THERE!</h1>
 			</div>
 			<!--                80 column marker                 -->
 			<article>
 				<h2>About Me</h2>
-				<img src="petpet.gif"
+				<img src="petpet.webp"
 				     alt="the gophers are coming">
 				<p>
 				I'm a computer engineering technology student,
