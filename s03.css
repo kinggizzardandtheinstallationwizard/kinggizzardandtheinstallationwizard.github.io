@@ -109,13 +109,29 @@ pre {
 	}
 }
 
-/* This fixes a bug with min.css */
+/*
+ * This fixes a bug with min.css
+ * <nav> wasn't really intended to have
+ * its background color changed, so it
+ * puts weird holes in the the custom
+ * color on mobile. These rules seem
+ * to remedy that:
+ */
 .nav a:hover {
-	display: none;
+	background-color:rgba(0,0,0,0);
 }
 .btn.btn-close {
-	display:none;
+	background-color:rgba(0,0,0,0);
 }
 div:before {
-	display:none;
+	background-color:rgba(0,0,0,0);
+}
+
+@media (max-width: 500px) {
+	.btn.btn-close {
+		display: none;
+	}
+	div:before {
+		display: none;
+	}
 }
