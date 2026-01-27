@@ -36,8 +36,8 @@ nav img {
 	text-align: center;
 }
 .hero img {
-	transform: scale(3);
 	image-rendering: pixelated;
+	transform: scale(3);
 }
 .hero .fl {
 	float: left;
@@ -46,6 +46,10 @@ nav img {
 .hero .fr {
 	float: right;
 	transform-origin: top right;
+}
+
+.mobile-gopher {
+	display: none;
 }
 
 article {
@@ -76,16 +80,42 @@ pre {
 }
 
 /* Mobile Users */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 	article {
 		margin: auto;
 		max-width: 100dvw;
 		text-indent: 0em;
 	}
-	article img {
-		display: none;
-	}
 	.hero {
 		max-width: 90dvw;
 	}
+	article img {
+		display: none;
+	}
+}
+@media (max-width: 490px) {
+	.hero {
+		max-width: 90dvw;
+	}
+	.hero img {
+		display: none;
+	}
+	.mobile-gopher {
+		display: inline;
+		image-rendering: pixelated;
+		margin: 3em;
+		text-align: center;
+		transform: scale(3);
+	}
+}
+
+/* This fixes a bug with min.css */
+.nav a:hover {
+	display: none;
+}
+.btn.btn-close {
+	display:none;
+}
+div:before {
+	display:none;
 }
